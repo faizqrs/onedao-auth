@@ -202,7 +202,6 @@ This submission focuses on the functional requirements. The following are known 
 - **Token revocation storage:** the logout blacklist is in memory, so it resets on restart and does not work across multiple instances. Redis (with a TTL equal to the token expiry) would fix this.
 - **Database migrations:** `spring.jpa.hibernate.ddl-auto=update` is used for convenience. A production setup would use Flyway or Liquibase.
 - **OTP delivery:** the OTP is logged to the console instead of being sent by email or SMS.
-- **Frontend:** the job description mentions a frontend task. This submission covers the backend only.
 
 ## Project structure
 
